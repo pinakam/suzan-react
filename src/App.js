@@ -6,6 +6,8 @@ import TernaryOperator from './Js-basics/TernaryOperator';
 import Mapmethod from './Js-basics/Mapmethod';
 import Reducemethod from './Js-basics/Reducemethod';
 import FilterMethod from './Js-basics/FilterMethod';
+import ClassBasedFunction from './OOPS-Concept/ClassBasedFunction';
+import ObjectDestructuring from './OOPS-Concept/ObjectDestructuring';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
    {/* <TernaryOperator/> */}
    {/* <Mapmethod/> */}
    {/* <Reducemethod/> */}
-   <FilterMethod/>
+   {/* <FilterMethod/> */}
+   {/* <ClassBasedFunction/> */}
+   <ObjectDestructuring/>
    </>
   );
 }
