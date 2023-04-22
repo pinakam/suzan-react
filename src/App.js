@@ -8,6 +8,7 @@ import Reducemethod from './Js-basics/Reducemethod';
 import FilterMethod from './Js-basics/FilterMethod';
 import ClassBasedFunction from './OOPS-Concept/ClassBasedFunction';
 import ObjectDestructuring from './OOPS-Concept/ObjectDestructuring';
+import MapDemo from './Practical-demo/MapDemo';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
    {/* <Reducemethod/> */}
    {/* <FilterMethod/> */}
    {/* <ClassBasedFunction/> */}
-   <ObjectDestructuring/>
+   {/* <ObjectDestructuring/> */}
+  <MapDemo/>
    </>
   );
 }
