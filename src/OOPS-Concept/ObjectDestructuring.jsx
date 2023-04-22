@@ -18,6 +18,7 @@ const ObjectDestructuring = () => {
         <h1 className=" mt-5 mb-5 text-danger fst-italic">Object Destructuring:-</h1>
         <div className="shadow-lg p-4  bg-body rounded">
         {/* data arrives from component/Box */}
+        
         <Box PersonName={person} />
         </div>
       </div>
