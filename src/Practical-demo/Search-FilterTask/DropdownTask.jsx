@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import { JSON } from "../ProductJson";
 const DropdownTask = () => {
   const [selectedValue, setSelectedValue] = useState("");
-  const [removeRepeat, setRemoveRepeat] = useState([JSON])
+  const [removeRepeat, setRemoveRepeat] = useState([JSON]);
 
-useEffect(() => {
-  const uniqueArray = JSON.products.filter((item,index)=>{
-    return index === JSON.products.findIndex((obj) =>{
-       return item.category === obj.category;
-    })
-   })
-   setRemoveRepeat(uniqueArray)
-}, [])
-
+  useEffect(() => {
+    const uniqueArray = JSON.products.filter((item, index) => {
+      return (
+        index === JSON.products.findIndex((obj) => {
+          return item.category === obj.category;
+        })
+      );
+    });
+    setRemoveRepeat(uniqueArray);
+  }, []);
 
   const filteredData = JSON.products.filter((item) => {
     if (selectedValue === "") {
@@ -22,12 +23,10 @@ useEffect(() => {
     }
   });
 
-  
-
   const handleChange = (event) => {
-    setSelectedValue(event.target.value); 
+    setSelectedValue(event.target.value);
   };
- 
+
   return (
     <>
       <h4 className="bg-dark text-white  text-center p-3 mt-5 mb-5">
@@ -39,29 +38,23 @@ useEffect(() => {
       <div className="text-center bg-light mb-5">
         <div className="row">
           <div className="col-md-4 me-5 ms-5">
-          
             <select
               value={selectedValue}
               onChange={handleChange}
               id="inputState"
               className="form-select"
             >
-            { removeRepeat.map((item)=>{
-              return(
-                <>
-                 <option value={item.category}>{item.category}</option>
-                
-                </>
-              )
-            })}
+              {removeRepeat.map((item) => {
+                return (
+                  <>
+                    <option value={item.category}>{item.category}</option>
+                  </>
+                );
+              })}
               <option value="" selected>
                 select category
               </option>
-              
-              </select>
-
-             
-           
+            </select>
           </div>
         </div>
       </div>
