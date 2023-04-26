@@ -8,6 +8,8 @@ import Reducemethod from './Js-basics/Reducemethod';
 import FilterMethod from './Js-basics/FilterMethod';
 import ClassBasedFunction from './OOPS-Concept/ClassBasedFunction';
 import ObjectDestructuring from './OOPS-Concept/ObjectDestructuring';
+import Typefiltertask from './Practical-demo/Search-FilterTask/Typefiltertask';
+import DropdownTask from './Practical-demo/Search-FilterTask/DropdownTask';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
    {/* <Reducemethod/> */}
    {/* <FilterMethod/> */}
    {/* <ClassBasedFunction/> */}
-   <ObjectDestructuring/>
+   {/* <ObjectDestructuring/> */}
+   {/* <Typefiltertask/> */}
+   <DropdownTask/>
    </>
   );
 }
