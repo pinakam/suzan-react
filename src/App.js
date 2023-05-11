@@ -14,6 +14,8 @@ import DropdownTask from './Practical-demo/Search-FilterTask/DropdownTask';
 import GalleryDisplay from './Practice/GalleryDisplay';
 import ListView from './Practice/ListView';
 import MenuPrint from './Practice/MenuPrint';
+import SelectLocation from './Practice/SelectLocation';
+import DisplayCaroselCards from './Practice/DisplayCaroselCards';
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
    {/* <DropdownTask/> */}
    {/* <GalleryDisplay/> */}
    {/* <ListView/>   */}
-   <MenuPrint/>
+   {/* <MenuPrint/> */}
+   {/* <SelectLocation/> */}
+   <DisplayCaroselCards/>
    </>
   );
 }
