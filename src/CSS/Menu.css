@@ -1,0 +1,33 @@
+  .color{
+   
+    border: 1px solid rgb(119, 119, 191);
+    background-color: rgba(3, 74, 107, 0.979);
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right:35px !important;
+   
+}
+.color  a{
+  color: white;
+  text-decoration: none;
+}
+.color  a:hover{
+  color: rgb(250, 101, 168);
+}
+.sub-color a{
+  color: black;
+}
+.title-color{
+  background-color:rgba(3, 74, 107, 0.979);
+ color: white;
+ border: 5px inset rgb(119, 119, 191);
+ text-align: center;
+ /* padding: 30px; */
+ padding-top: 8px;
+  width: 100%;
+  font-size: larger;
+  height: 50px;
+}

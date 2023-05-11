@@ -9,6 +9,11 @@ import FilterMethod from './Js-basics/FilterMethod';
 import ClassBasedFunction from './OOPS-Concept/ClassBasedFunction';
 import ObjectDestructuring from './OOPS-Concept/ObjectDestructuring';
 import MapDemo from './Practical-demo/MapDemo';
+import Typefiltertask from './Practical-demo/Search-FilterTask/Typefiltertask';
+import DropdownTask from './Practical-demo/Search-FilterTask/DropdownTask';
+import GalleryDisplay from './Practice/GalleryDisplay';
+import ListView from './Practice/ListView';
+import MenuPrint from './Practice/MenuPrint';
 
 function App() {
   return (
@@ -21,7 +26,12 @@ function App() {
    {/* <FilterMethod/> */}
    {/* <ClassBasedFunction/> */}
    {/* <ObjectDestructuring/> */}
-  <MapDemo/>
+  {/* <MapDemo/> */}
+   {/* <Typefiltertask/> */}
+   {/* <DropdownTask/> */}
+   {/* <GalleryDisplay/> */}
+   {/* <ListView/>   */}
+   <MenuPrint/>
    </>
   );
 }

@@ -1,0 +1,44 @@
+export const List =[
+    {
+        name:"Country1",
+        parent:0,
+        id:1
+        },
+        {
+        name:"state1",
+        parent:1,
+        id:2
+        },
+        {
+        name:"city1.1",
+        parent:2,
+        id:3
+        },
+        {
+        name:"city1.2",
+        parent:2,
+        id:4
+        },
+
+        {
+        name:"Country2",
+        parent:0,
+        id:5
+        },
+        {
+        name:"state2",
+        parent:5,
+        id:6
+        },
+        {
+        name:"city2.1",
+        parent:6,
+        id:7
+        },
+        {
+        name:"city2.2",
+        parent:6,
+        id:4
+        },
+
+]
