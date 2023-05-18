@@ -16,6 +16,9 @@ import ListView from './Practice/ListView';
 import MenuPrint from './Practice/MenuPrint';
 import SelectLocation from './Practice/SelectLocation';
 import DisplayCaroselCards from './Practice/DisplayCaroselCards';
+import HomePage from './amazon-site/HomePage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Product from './amazon-site/Product';
 
 function App() {
   return (
@@ -35,7 +38,15 @@ function App() {
    {/* <ListView/>   */}
    {/* <MenuPrint/> */}
    {/* <SelectLocation/> */}
-   <DisplayCaroselCards/>
+   {/* <DisplayCaroselCards/> */}
+  
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<HomePage/>}></Route>
+    <Route path='/product/:id' element={<Product/>}></Route>
+    </Routes>
+   </BrowserRouter>
+  
    </>
   );
 }

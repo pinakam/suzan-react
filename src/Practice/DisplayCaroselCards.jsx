@@ -13,7 +13,7 @@ const DisplayCaroselCards = () => {
             <div className="container">
               <div className="row">
                 <div className="col">
-                  <div className="d-block w-100 mx-5 ">
+                  <div className="d-block w-100 mx-5">
                     <div className="card" style={{height:"450px"}}>
                       <img src={item.img[0]} className="card-img-top "style={{height:"250px"}} alt="..." />
                       <div className="card-body">
