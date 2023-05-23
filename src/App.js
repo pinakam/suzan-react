@@ -19,6 +19,11 @@ import DisplayCaroselCards from './Practice/DisplayCaroselCards';
 import HomePage from './amazon-site/HomePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Product from './amazon-site/Product';
+import Demo from './hooks/Demo';
+import DemoUseState from './hooks/DemoUseState';
+
+
+
 
 function App() {
   return (
@@ -39,13 +44,14 @@ function App() {
    {/* <MenuPrint/> */}
    {/* <SelectLocation/> */}
    {/* <DisplayCaroselCards/> */}
-  
-   <BrowserRouter>
+    <DemoUseState/>
+    {/* <Demo/> */}
+   {/* <BrowserRouter>
    <Routes>
     <Route path='/' element={<HomePage/>}></Route>
     <Route path='/product/:id' element={<Product/>}></Route>
     </Routes>
-   </BrowserRouter>
+   </BrowserRouter> */}
   
    </>
   );
