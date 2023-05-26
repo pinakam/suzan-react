@@ -9,7 +9,7 @@ const UpdatePage = () => {
   const [category, setCategory] = useState(initialCategory);
   const { id } = useParams();
   const navigate = useNavigate();
-
+// get method
   useEffect(() => {
     axios
       .get(`https://63db8ebec45e08a04348204c.mockapi.io/cruddemo/${id}`)
@@ -21,7 +21,7 @@ const UpdatePage = () => {
         });
       })
       .catch((error) => {
-        console.error(`Error fetching item with ID ${id}:`, error);
+        console.error(`Error display fetching item with ID ${id}:`, error);
       });
   }, [id]);
 
@@ -34,7 +34,7 @@ const UpdatePage = () => {
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    console.log("Id...", id);
+    console.log("Id.....", id);
     axios
       .put(`https://63db8ebec45e08a04348204c.mockapi.io/cruddemo/${id}`, {
         name: category.Name,

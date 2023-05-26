@@ -39,7 +39,7 @@ const ReadPage = () => {
 
   useEffect(() => {
     if (location.state && location.state.updatedCategory) {
-      // Update the data state with the updated category
+      // Update the data state with the updated category.
       setJsData((prevData) => {
         const updatedIndex = prevData.findIndex(
           (item) => item.id === location.state.updatedCategory.id

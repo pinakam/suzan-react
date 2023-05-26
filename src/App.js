@@ -6,8 +6,7 @@ import UpdatePage from "./pages/UpdatePage";
 function App() {
   return (
    <>
-   
-   
+
    <BrowserRouter>
    <Routes>
     <Route path="/" element={<ReadPage/>}></Route>

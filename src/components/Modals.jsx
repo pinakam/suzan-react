@@ -23,7 +23,7 @@ function Modals(props) {
        setValidation(errors);
      
     } else {
-      // No validation errors
+      // there no validation errors
       props.onSubmit()
       props.modalClose()
     }

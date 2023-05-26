@@ -1,6 +1,7 @@
 import React from "react";
 
 const FormValidation = (category) => {
+  // display messages in error
   const errors = {};
 
   if (category.Name.trim() === "") {
