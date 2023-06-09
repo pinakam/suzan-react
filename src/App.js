@@ -23,6 +23,8 @@ import Product from "./amazon-site/Product";
 import Demo from "./hooks/Demo";
 import DemoUseState from "./hooks/DemoUseState";
 import DemoUseRef from "./hooks/DemoUseRef";
+import AddEdit from "./firebase-crud/pages/AddEdit";
+import View from "./firebase-crud/pages/View";
 
 function App() {
   return (
@@ -44,7 +46,7 @@ function App() {
       {/* <SelectLocation/> */}
       {/* <DisplayCaroselCards/> */}
       {/* <DemoUseState /> */}
-      <DemoUseRef/>
+      {/* <DemoUseRef/> */}
       {/* <Demo/> */}
       {/* <BrowserRouter>
    <Routes>
@@ -52,6 +54,15 @@ function App() {
     <Route path='/product/:id' element={<Product/>}></Route>
     </Routes>
    </BrowserRouter> */}
+    <BrowserRouter>
+   <Routes>
+   
+   <Route path="/" element={<View/>} ></Route>
+    <Route path="/Add" element={<AddEdit/>} ></Route>
+    <Route path="/edit/:id"  element={<AddEdit editMode={true} />}></Route>
+  
+    </Routes>
+   </BrowserRouter>
     </>
   );
 }
