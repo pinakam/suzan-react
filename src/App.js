@@ -25,6 +25,7 @@ import DemoUseState from "./hooks/DemoUseState";
 import DemoUseRef from "./hooks/DemoUseRef";
 import AddEdit from "./firebase-crud/pages/AddEdit";
 import View from "./firebase-crud/pages/View";
+import StoreImage from "./firebase-store-img/StoreImage";
 
 function App() {
   return (
@@ -54,7 +55,7 @@ function App() {
     <Route path='/product/:id' element={<Product/>}></Route>
     </Routes>
    </BrowserRouter> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
    <Routes>
    
    <Route path="/" element={<View/>} ></Route>
@@ -62,7 +63,8 @@ function App() {
     <Route path="/edit/:id"  element={<AddEdit editMode={true} />}></Route>
   
     </Routes>
-   </BrowserRouter>
+   </BrowserRouter> */}
+   <StoreImage/>
     </>
   );
 }
