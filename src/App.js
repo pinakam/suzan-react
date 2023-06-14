@@ -26,10 +26,19 @@ import DemoUseRef from "./hooks/DemoUseRef";
 import AddEdit from "./firebase-crud/pages/AddEdit";
 import View from "./firebase-crud/pages/View";
 import StoreImage from "./firebase-store-img/StoreImage";
-
+import DemoUseContext from "./toggle-theme/DemoUseContext";
+import { useState } from "react";
+import { ThemeContext, themes } from "./context/themeContext";
 function App() {
+  // code for setting theme in DemoUseContext
+  const [theme, setTheme] = useState(themes.light)
+   //  button 
+   const handleClick = () => {
+    theme === themes.light ? setTheme(themes.dark) : setTheme(themes.light)
+}
   return (
     <>
+    
       {/* <Firstdemo/> */}
       {/* <Spreadoperatordemo/> */}
       {/* <TernaryOperator/> */}
@@ -64,7 +73,14 @@ function App() {
   
     </Routes>
    </BrowserRouter> */}
-   <StoreImage/>
+   {/* <StoreImage/> */}
+
+   {/* some code for useContext hook toggle theme */}
+  <ThemeContext.Provider value={{theme, handleClick}}>
+  <DemoUseContext  theme={theme}/>
+  
+  </ThemeContext.Provider>
+  
     </>
   );
 }
