@@ -1,0 +1,35 @@
+.eachItem{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(193, 244, 178);
+    width:25%;
+    padding: 5px;
+}
+.eachItem:hover{
+    background-color: rgb(238, 185, 238);
+}
+.icon-del{
+   font-size: xx-large;
+    color: #ef3737;
+}
+.input-div{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: max-content;
+    padding: 4px;
+}
+.input-css{
+    border: none;
+}
+.input-css:focus{
+    border: none;
+    outline: none; 
+}
+
+/* .input-css:focus{
+    background-color: rgb(193, 244, 178) ;
+    border: none;
+    outline: 3px solid rgb(219, 206, 145);
+    border-radius: 4px;
+} */
