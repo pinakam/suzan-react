@@ -1,3 +1,5 @@
+import CartProvider from "./Context-api-programs/product-site/CartContext"
+import ProductPage from "./Context-api-programs/product-site/ProductPage"
 import Form from "./Form"
 import Todo from "./Todo"
 function App() {
@@ -7,7 +9,11 @@ function App() {
   {/* to run Form decomment the index.css */}
 
   {/* <Form/> */}
-  <Todo/>
+  {/* <Todo/> */}
+  <CartProvider>
+  <ProductPage/>
+  </CartProvider>
+ 
   </>
   )
   
